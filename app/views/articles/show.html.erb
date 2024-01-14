@@ -1,0 +1,9 @@
+<div>
+<h1 style="display:inline">Title:</h1> <p><%= @title %></p>
+<h1>Description: <%= @description %></h1>
+<span>
+    <span><%= link_to 'Return to articles', articles_path %></span>
+    <span><%= link_to 'Edit', edit_article_path(@article) %></span>
+    <span><%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure?"}%></span>
+</span>
+</div>
